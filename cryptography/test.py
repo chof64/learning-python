@@ -1,4 +1,4 @@
-shift = 3
+shift = 5
 
 message = "Hello World"
 
@@ -8,6 +8,10 @@ eUppercase = uppercase[shift:] + uppercase[:shift]
 lowercase = "abcdefghijklmnopqrstuvwxyz"
 eLowercase = lowercase[shift:] + lowercase[:shift]
 
+print(uppercase)
+print(eUppercase)
+print(lowercase)
+print(eLowercase)
 
 def encrypt(message):
     result = ""
