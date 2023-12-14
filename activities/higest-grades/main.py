@@ -1,3 +1,6 @@
+# Author: Chad Fernandez
+# License: MIT License
+
 with open("grades.txt", "r") as f:
   contents = f.readlines()
 
