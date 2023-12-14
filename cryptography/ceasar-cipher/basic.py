@@ -4,11 +4,11 @@
 # implementation of the Ceasar Cipher. Which uses slicing to shift the alphabet
 # by a given number of letters.
 
+
 # USER INPUT
 # Get input from the user for the key and message to encrypt.
 key = int(input("Enter a number to shift by (the key): "))
 message = input("Enter a message to encrypt: ")
-
 
 # OUR ALPHABET
 # This is the base alphabet that we will shift to encrypt the mssage.
@@ -19,7 +19,6 @@ lowercase = "abcdefghijklmnopqrstuvwxyz"
 # the key.
 eUppercase = uppercase[key:] + uppercase[:key]
 eLowercase = lowercase[key:] + lowercase[:key]
-
 
 # ENCRYPT FUNCTION
 # This function takes a message as an argument and returns the encrypted
@@ -40,7 +39,6 @@ def encrypt(message):
         else:
             result += letter
     return result
-
 
 # DECRYPT FUNCTION
 # This function takes a message as an argument and returns the decrypted
@@ -64,12 +62,15 @@ def decrypt(message):
             result += letter
     return result
 
+# ENCRYPT AND DECRYPT
+# Call the encrypt and decrypt functions and put the results in variables.
+encrypted = encrypt(message)
+decrypted = decrypt(encrypted)
 
+# PRINT RESULTS
 print("\nPLAIN TEXT: ", message)
 print("KEY: ", key,"\n")
 
-encrypted = encrypt(message)
 print("ENCRYPTED: ", encrypted,"\n")
 
-decrypted = decrypt(encrypted)
 print("DECRYPTED: ", decrypted)
