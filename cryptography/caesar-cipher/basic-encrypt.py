@@ -1,6 +1,6 @@
 # Author: Chad Fernandez
 # License: MIT License
-# Description: This focuses on encryption. Encrypts a message using the Ceasar
+# Description: This focuses on encryption. Encrypts a message using the Caesar
 # Cipher.
 
 

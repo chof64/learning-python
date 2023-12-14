@@ -1,7 +1,7 @@
 # Author: Chad Fernandez
 # License: MIT License
-# Description: Encrypts a message using the Ceasar Cipher. This is a basic
-# implementation of the Ceasar Cipher. Which uses slicing to shift the alphabet
+# Description: Encrypts a message using the Caesar Cipher. This is a basic
+# implementation of the Caesar Cipher. Which uses slicing to shift the alphabet
 # by a given number of letters.
 
 

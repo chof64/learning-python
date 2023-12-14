@@ -1,19 +1,24 @@
 # Author: Chad Fernandez
 # License: MIT License
-# Description: This is a brute force attack. It will try every possible key to
-# decrypt the message. It will print the decrypted message for each key. You
-# will have to look through the results to find the correct message.
+# Description: This focuses on decryption. Decrypts a message using the Caesar
+# Cipher.
 
 
 # USER INPUT
-# Get input from the user for the message to brute force decrypt.
-message = input("Enter a message to brute force decrypt: ")
+# Get input from the user for the key and message to decrypt.
+key = int(input("Enter a number to shift by (the key): "))
+message = input("Enter a message to decrypt: ")
 print("\n")
 
 # OUR ALPHABET
 # This is the base alphabet that we will shift to encrypt the mssage.
 uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lowercase = "abcdefghijklmnopqrstuvwxyz"
+
+# This is the new encrypted alphabet. We use slicing to shift the alphabet by
+# the key.
+eUppercase = uppercase[key:] + uppercase[:key]
+eLowercase = lowercase[key:] + lowercase[:key]
 
 # DECRYPT FUNCTION
 # This function takes a message as an argument and returns the decrypted
@@ -37,17 +42,12 @@ def decrypt(message):
             result += letter
     return result
 
-# BRUTE FORCE
-# Loop through every possible key.
-for key in range(26):
-  # This is the new encrypted alphabet. We use slicing to shift the alphabet
-  # by the key.
-  eUppercase = uppercase[key:] + uppercase[:key]
-  eLowercase = lowercase[key:] + lowercase[:key]
+# DECRYPT
+# Call the decrypt function and put the result in variable.
+decrypted = decrypt(message)
 
-  # Call the decrypt function and put the result in variable.
-  decrypted = decrypt(message)
+# PRINT RESULTS
+print("\nPLAIN TEXT: ", message)
+print("KEY: ", key,"\n")
 
-  # Print the results.
-  print("KEY: ", key)
-  print("DECRYPTED: ", decrypted,"\n")
+print("DECRYPTED: ", decrypted)
