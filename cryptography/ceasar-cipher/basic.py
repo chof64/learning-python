@@ -68,8 +68,15 @@ def decrypt(message):
 encrypted = encrypt(message)
 decrypted = decrypt(encrypted)
 
+# PRINT ALPHABETS
+# print("PLAIN UPPER: ", uppercase)
+# print("ENCRYPTED UPPER: ", eUppercase, "\n")
+#
+# print("PLAIN LOWER: ", lowercase)
+# print("ENCRYPTED LOWER: ", eLowercase,"\n")
+
 # PRINT RESULTS
-print("\nPLAIN TEXT: ", message)
+print("PLAIN TEXT: ", message)
 print("KEY: ", key,"\n")
 
 print("ENCRYPTED: ", encrypted,"\n")

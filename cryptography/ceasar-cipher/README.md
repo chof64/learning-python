@@ -1,6 +1,6 @@
 # Ceasar Cipher
 
-This topic talks about the Ceasar Cipher, a simple symmetric encryption technique. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+This topic talks about the Ceasar Cipher, a simple symmetric encryption technique. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, A would be replaced by D, B would become E, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
 
 ## Files
 
