@@ -5,9 +5,10 @@
 
 
 # USER INPUT
-# Get input from the user for the key and message to encrypt.
+# Get input from the user for the key and message to decrypt.
 key = int(input("Enter a number to shift by (the key): "))
 message = input("Enter a message to decrypt: ")
+print("\n")
 
 # OUR ALPHABET
 # This is the base alphabet that we will shift to encrypt the mssage.
