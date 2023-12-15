@@ -13,8 +13,8 @@ print("\n")
 
 # OUR ALPHABET
 # This is the base alphabet that we will shift to encrypt the mssage.
-uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-lowercase = "abcdefghijklmnopqrstuvwxyz"
+plain_uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+plain_lowercase = "abcdefghijklmnopqrstuvwxyz"
 
 # DECRYPT FUNCTION
 # This function takes a message as an argument and returns the decrypted
@@ -30,10 +30,10 @@ lowercase = "abcdefghijklmnopqrstuvwxyz"
 def decrypt(message):
     result = ""
     for letter in message:
-        if letter in eUppercase:
-            result += uppercase[eUppercase.index(letter)]
-        elif letter in eLowercase:
-            result += lowercase[eLowercase.index(letter)]
+        if letter in cipher_uppercase:
+            result += plain_uppercase[cipher_uppercase.index(letter)]
+        elif letter in cipher_lowercase:
+            result += plain_lowercase[cipher_lowercase.index(letter)]
         else:
             result += letter
     return result
@@ -43,8 +43,8 @@ def decrypt(message):
 for key in range(26):
   # This is the new encrypted alphabet. We use slicing to shift the alphabet
   # by the key.
-  eUppercase = uppercase[key:] + uppercase[:key]
-  eLowercase = lowercase[key:] + lowercase[:key]
+  cipher_uppercase = plain_uppercase[key:] + plain_uppercase[:key]
+  cipher_lowercase = plain_lowercase[key:] + plain_lowercase[:key]
 
   # Call the decrypt function and put the result in variable.
   decrypted = decrypt(message)
