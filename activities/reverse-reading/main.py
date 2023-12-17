@@ -5,6 +5,7 @@
 with open("input.txt", "r") as f:
   contents = f.readlines()
 
+
 for i in range(len(contents)):
   contents[i] = contents[i].strip()
 
