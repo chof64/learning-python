@@ -1,2 +1,1 @@
-Apple, Banana, Cherry, Grapes
-Kiwi, Mango, Orange, Pineapple
+Apple, Banana, Cherry, Grapes, Kiwi, Mango, Orange, Pineapple
